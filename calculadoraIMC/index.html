@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script type="module" src="./js/script.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calcular IMC</h1>
+        <p>Utilize o formulário abaixo para calcular o seu IMC.</p>
+        <a data-modal="abrir" href="singup.html">Inscreva-se</a>
+
+        <div class="input-medidas">
+            <form id="form-control">
+
+                <label>Peso:</label>
+                <input type="text" id="peso" placeholder="Ex.: 60,0 kg">
+
+                <label>Altura:</label>
+                <input type="text" id="altura" placeholder="Ex.: 1,60m">
+                <ul>
+                    <li>
+                        <button id="btn-submit">Calcular</button>
+                    </li>
+                    <li>
+                        <button id="btn-clear">Limpar</button>
+                    </li>
+                </ul>
+
+
+            </form>
+        </div>
+        <div class="div-result">
+
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                    <th>IMC</th>
+                    <th>CLASSIFICAÇÃO</th>
+                    <th>OBESIDADE (GRAU)</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MENOR QUE 18,5</td>
+                        <td>MAGREZA</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 18,5 E 24,9</td>
+                        <td>NORMAL</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 25,0 E 29,9</td>
+                        <td>SOBREPESO</td>
+                        <td>I</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 30,0 E 39,9</td>
+                        <td>OBESIDADE</td>
+                        <td>II</td>
+                    </tr>
+                    <tr>
+                        <td>MAIOR QUE 40,0</td>
+                        <td>OBESIDADE GRAVE</td>
+                        <td>III</td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="modal-container" data-modal="container">
+        <div class="modal">
+            <button data-modal="fechar" class="fechar">X</button>
+            <form action="">
+                <label for="email">Email</label>
+                <input type="text" for="email" id="email">
+                <label for="senha">Senha</label>
+                <input type="password" for="senha" id="senha">
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
