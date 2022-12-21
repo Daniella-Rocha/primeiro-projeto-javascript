@@ -1,4 +1,5 @@
 # primeiro-miniprojeto-javascript
+Em construção
 
 Calculadora de imc, que ao digitar o peso e altura, ela calcula o índice ideal de acordo com a estatura da pessoa. Ajuda pessoas que tem interesse em perda de peso.
 
